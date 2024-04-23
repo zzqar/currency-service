@@ -30,5 +30,10 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'cbr' => [
+        'api_url' => env('CBR_API_URL'),
+        'retry_attempts' => env('CBR_RETRY_ATTEMPTS', 3),
+        'retry_delay' => env('CBR_RETRY_DELAY'),
+    ],
 
 ];
